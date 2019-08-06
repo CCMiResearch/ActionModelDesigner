@@ -1,0 +1,26 @@
+{
+  "name": "actionmodeldesigner",
+  "version": "1.0.0",
+  "description": "Action model designer based on Google Blockly",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeldeOn/ActionModelDesigner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeldeOn/ActionModelDesigner/issues"
+  },
+  "homepage": "https://github.com/SeldeOn/ActionModelDesigner#readme",
+  "dependencies": {
+    "blockly": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}

@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>DasContract: ActionModelDesigner</title>
-    <script src="blockly/blockly_compressed.js"></script>
-    <script src="blockly/blocks_compressed.js"></script>
-    <script src="blockly/msg/js/en.js"></script>
-    <style>
-        body {
-            background-color: #fff;
-            font-family: sans-serif;
-        }
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DasContract: ActionModelDesigner</title>
+        <script src="node_modules/blockly/blockly_compressed.js"></script>
+        <script src="node_modules/blockly/blocks_compressed.js"></script>
+        <script src="node_modules/blockly/msg/js/en.js"></script>
+        <link rel="stylesheet" href= "main.css">
+    </head>
+    <body>
+        <h1>DasContract: ActionModelDesigner</h1>
 
-        h1 {
-            font-weight: normal;
-            font-size: 140%;
-        }
-    </style>
-</head>
-<body>
-    <h1>DasContract: ActionModelDesigner</h1>
+    <p>Injection of fixed size blockly with preview of available DasContract Blocks. Rule block mutator is still in progress.</p>
 
-    <p>Only injection of fixed size blockly</p>
-
-    <div id="blocklyDiv" style="height: 450px; width: 1000px;"></div>
+    <div id="blocklyDiv" style="height: 80%; width: 100%;"></div>
 
     <xml id="toolbox" style="display: none">
-        <block type="controls_if"></block>
-        <block type="logic_compare"></block>
-        <block type="controls_repeat_ext"></block>
-        <block type="math_number">
-            <field name="NUM">123</field>
-        </block>
-        <block type="math_arithmetic"></block>
-        <block type="text"></block>
-        <block type="text_print"></block>
-        
+        <category name="Rule">
+            <block type="dascontract_rule"></block>
+        </category>
+        <category name="With">
+            <block type="dascontract_with"></block>
+        </category>
+        <category name="If">
+            <block type="dascontract_compval"></block>
+            <block type="dascontract_compmem"></block>
+            <block type="dascontract_parentheses"></block>
+            <block type="dascontract_not"></block>
+            <block type="dascontract_and"></block>
+            <block type="dascontract_or"></block>    
+        </category>
+        <category name="Action">
+            <block type="dascontract_action_assign"></block>
+            <block type="dascontract_action_trans"></block>
+            <block type="dascontract_action_param"></block>
+        </category>       
     </xml>
-
-    <script>
-        var AMDWorkspace = Blockly.inject('blocklyDiv',
-            {
-                toolbox: document.getElementById('toolbox')
-            });
-    </script>
-
-</body>
+    <script src="dist/bundledApp.js"></script>
+    </body>
 </html>

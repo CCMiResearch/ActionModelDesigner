@@ -1,0 +1,383 @@
+{
+    "type": "dascontract_rule",
+    "message0": "Rule: %1 %2 When %3 %4 %5 If %6 Then %7",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "RULE_NAME",
+        "text": "...Name..."
+      },
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "field_dropdown",
+        "name": "TRANSACTION_KIND",
+        "options": [
+          [
+            "T-1",
+            "T_1"
+          ],
+          [
+            "T-2",
+            "T_2"
+          ],
+          [
+            "T-3",
+            "T_3"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "STATE",
+        "options": [
+          [
+            "Requested",
+            "REQUESTED"
+          ],
+          [
+            "Promised",
+            "PROMISED"
+          ],
+          [
+            "Declined",
+            "DECLINED"
+          ]
+        ]
+      },
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "IF"
+      },
+      {
+        "type": "input_statement",
+        "name": "THEN"
+      }
+    ],
+    "colour": 265,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_with",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "With",
+        "options": [
+          [
+            "Mortage.Ammount",
+            "MORTAGE_AMMOUNT"
+          ],
+          [
+            "Mortage.Client",
+            "MORTAGE_CLIENT"
+          ],
+          [
+            "Client.Age",
+            "CLIENT_AGE"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 115,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_action_assign",
+    "message0": "Assign %1 = %2",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "AAAA",
+        "text": "..."
+      },
+      {
+        "type": "field_input",
+        "name": "BBBB",
+        "text": "..."
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 0,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_action_trans",
+    "message0": "%1 %2 %3 %4",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "ttt",
+        "options": [
+          [
+            "option",
+            "ooo"
+          ],
+          [
+            "option",
+            "pppp"
+          ],
+          [
+            "option",
+            "qqqq"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "nnn",
+        "options": [
+          [
+            "option",
+            "mmmm"
+          ],
+          [
+            "option",
+            "kkkk"
+          ],
+          [
+            "option",
+            "lllll"
+          ]
+        ]
+      },
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "NAME"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 30,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_action_param",
+    "message0": "%1 : %2",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "NAME",
+        "text": "default"
+      },
+      {
+        "type": "field_dropdown",
+        "name": "rrrrr",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 65,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_parentheses",
+    "message0": "( %1 %2 )",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "NAME"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 225,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_not",
+    "message0": "NOT %1 %2",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "NAME"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 225,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_and",
+    "message0": "AND",
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 225,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_or",
+    "message0": "OR",
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 225,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_compval",
+    "message0": "%1 %2 %3",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "a",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "NAME",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      },
+      {
+        "type": "field_input",
+        "name": "b",
+        "text": "default"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 210,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
+  
+  {
+    "type": "dascontract_compmem",
+    "message0": "%1 %2 %3",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "NAME1",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "2",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "3",
+        "options": [
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ],
+          [
+            "option",
+            "OPTIONNAME"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 210,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/"
+  }
